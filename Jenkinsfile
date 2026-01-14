@@ -15,7 +15,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     credentialsId: 'github',
-                    url: 'https://https://github.com/sangnt8386/gitops-feedback-app.git'
+                    url: 'https://https://github.com/sangnt8386/gitops-feedback-app'
             }
         }
 
