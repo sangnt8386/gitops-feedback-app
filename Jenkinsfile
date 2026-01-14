@@ -52,7 +52,7 @@ pipeline {
                         fi
                     """
                     
-                    # Dùng credentials để push
+                    
                     withCredentials([gitUsernamePassword(credentialsId: 'github', gitToolName: 'Default')]) {
                         sh "git push https://github.com/sangnt8386/gitops-feedback-app.git main"
                     }
