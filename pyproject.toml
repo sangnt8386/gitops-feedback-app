@@ -1,0 +1,19 @@
+[project]
+name = "gitops-feedback-app"
+version = "0.1.0"
+description = "Modular monolith translation of a Cold Turkey service."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pycryptodome>=3.20.0",
+]
+
+[project.optional-dependencies]
+windows = ["pywin32>=306"]
+
+[project.scripts]
+gitops-feedback-app = "gitops_feedback_app.cli:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
